@@ -3,7 +3,7 @@ const textInput = document.querySelector('#validation-input')
 textInput.addEventListener("blur", inputCssStyle);
 
 function inputCssStyle() {
-     if (textInput.value.length !== Number.parseInt(textInput.dataset.length)) {
+     if (textInput.value.trim().length !== Number.parseInt(textInput.dataset.length)) {
         textInput.classList.add('invalid')
     } else {
         textInput.classList.remove('invalid')
