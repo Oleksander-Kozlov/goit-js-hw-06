@@ -13,10 +13,11 @@ for (const ingredient of ingredients) {
 const item = document.createElement('li');
 item.textContent = ingredient;
 item.classList.add('item')
-liTotal.push(item)
+liTotal.push(item);
 } 
-const markup = liTotal.map(item => item).join('')
-// list.append(markup)
-list.insertAdjacentHTML("beforeend", markup)
-// console.log(liTotal);
 
+list.append(...liTotal);
+
+console.log(liTotal);
+
+ 
