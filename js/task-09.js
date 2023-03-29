@@ -13,8 +13,9 @@ console.log(whatColor);
 
 btnChangeColor.addEventListener("click", changer)
 function changer() {
-  body.style.backgroundColor = getRandomHexColor();
-  whatColor.textContent = `${getRandomHexColor()}`
+  const currentСolor = getRandomHexColor()
+  body.style.backgroundColor = currentСolor;
+  whatColor.textContent = `${currentСolor}`;
 }
 
 function getRandomHexColor() {
