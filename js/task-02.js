@@ -18,6 +18,5 @@ liTotal.push(item);
 
 list.append(...liTotal);
 
-console.log(liTotal);
 
  
