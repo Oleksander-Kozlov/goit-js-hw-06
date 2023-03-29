@@ -13,7 +13,7 @@ const images = [
   },
 ];
 const list = document.querySelector('.gallery')
-console.log(list);
+
 const markup = images.map(({ url, alt }) =>
   `<li class="item"><img class="foto" width=300 src="${url}" alt="${alt}"></li>`).join('');
 

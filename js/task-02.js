@@ -8,14 +8,15 @@ const ingredients = [
 ];
 
 const list = document.querySelector("#ingredients");
+let liTotal = [];
 for (const ingredient of ingredients) {
 const item = document.createElement('li');
 item.textContent = ingredient;
-console.log(item.textContent);
 item.classList.add('item')
-list.append(item)
+liTotal.push(item)
 } 
-
-
-
+const markup = liTotal.map(item => item).join('')
+// list.append(markup)
+list.insertAdjacentHTML("beforeend", markup)
+// console.log(liTotal);
 
