@@ -30,7 +30,7 @@ function handleSubmit(event) {
     const {
         elements: { email, password }
     } = event.currentTarget;
-    console.log(event.currentTarget)
+   
     if (email.value.trim() === "" || password.value.trim() === "") {
           
         return alert("Шановний(а), будь ласка, обов'язково заповніть всі поля!");
@@ -41,8 +41,7 @@ function handleSubmit(event) {
          };
         console.log(userData);
          
-            console.log(`Email: ${email.value}, Password: ${password.value}`);
-        event.currentTarget.reset();
+            
     }
     
       
